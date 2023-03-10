@@ -1,0 +1,48 @@
+<app-search (EventFilter)="getCountryFilter($event)" ></app-search>
+
+<div class="allCountre">
+  <ng-container *ngFor="let countre of Countries">
+    <app-country-card [country]="countre"></app-country-card>
+  </ng-container>
+</div>
+
+<!-- <div class="Countre">
+    <div>
+       <img src="assets/image-product-mobile.jpg" alt="no image">
+    </div>
+   <div class="bodyContent shadow">
+     <h3>Germany</h3>
+   <div class="description"></div>
+     <p><span>Population: </span> 81,77,58 </p>
+     <p><span>Region: </span> Eurape </p>
+     <p><span>Capital: </span> Berlin </p>
+   </div>
+ </div>
+
+ <div class="Countre">
+    <div>
+       <img src="assets/image-product-mobile.jpg" alt="no image">
+    </div>
+   <div class="bodyContent shadow">
+     <h3>Germany</h3>
+   <div class="description"></div>
+     <p><span>Population: </span> 81,77,58 </p>
+     <p><span>Region: </span> Eurape </p>
+     <p><span>Capital: </span> Berlin </p>
+   </div>
+ </div>
+
+ <div class="Countre">
+    <div>
+       <img src="assets/image-product-mobile.jpg" alt="no image">
+    </div>
+   <div class="bodyContent shadow">
+     <h3>Germany</h3>
+   <div class="description"></div>
+     <p><span>Population: </span> 81,77,58 </p>
+     <p><span>Region: </span> Eurape </p>
+     <p><span>Capital: </span> Berlin </p>
+   </div>
+ </div>
+
+ -->

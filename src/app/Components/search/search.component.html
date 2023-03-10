@@ -1,0 +1,32 @@
+<div class="filter">
+    <div class="search">
+        <span class="fa fa-search"></span>
+        <input type="text"  
+         placeholder="Search for a country..."
+         [(ngModel)]="SearchFilter" (change)="ChangeSearch()"
+        />
+        <!-- placeholder="&#xF002;    Search for a country..." style="font-family:Arial, FontAwesome">-->
+    </div>
+
+    <div class="dropdown">
+        <div class="dropdown-label" (click)="toggleOptions()">
+            <span>{{placeholder}}</span>
+            <span class="fa fa-chevron-down"></span>
+        </div>
+        <ul class="dropdown-options shadow" *ngIf="showOption">
+            <li *ngFor="let option of regionOptions" (click)="select(option)">
+                {{option}}
+            </li>
+        </ul>
+
+        <!--
+        <select name="SelectRegion" [(ngModel)]="SelectFilter" (change)="ChangeSearch()">
+          <option value="" selected> filter-by-region </option>
+          <ng-container *ngFor="let resion of regionOptions">
+            <option [value]="resion">{{resion}}</option>
+          </ng-container>
+        </select>
+    -->
+    </div>
+</div>
+
